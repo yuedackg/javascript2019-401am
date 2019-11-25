@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yoshihiro UEDA's answer</title>
+    <script src="js/18000.js">    </script>
+    <link rel="stylesheet" href="css/1121.css">
+</head>
+
+<body>
+        <section>
+                <h1>次の問題にあう関数drawMesg()を作りなさい。</h1>
+                <div class="q">
+                    <table border="0">
+                        <tr>
+                            <td>関数名</td>
+                            <td>drawMesg</td>
+                        </tr>
+                        <tr>
+                            <td>パラメーター</td>
+                            <td>ｘ</td>
+                        </tr>
+                        <tr>
+                            <td>処理</td>
+                            <td>
+                                    document.write( "hello");<br>
+                                    document.write( "hello");<br>
+                                    document.write( "hello");<br>
+                                    document.write( "hello");<br>
+                                    document.write( "hello");<br>
+                                    document.write( "hello");<br>   
+                                    200回くりかえす。
+                                
+                            </td>
+                        </tr>
+                    </table>
+                    <button onclick="drawMesg(20)"">
+                        drawMesg(20)
+                    </button>
+                </div>
+            </section>
+    <section>
+        <h1>次の問題にあう関数foo()を作りなさい。</h1>
+        <div class="q">
+            <table border="0">
+                <tr>
+                    <td>関数名</td>
+                    <td>foo</td>
+                </tr>
+                <tr>
+                    <td>パラメーター</td>
+                    <td>ｘ</td>
+                </tr>
+                <tr>
+                    <td>処理</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td class="condition">条件</td>
+                                <td>戻り値</td>
+                            </tr>
+                            <tr>
+                                <td> x が１のとき</td>
+                                <td> 1
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>xが１でないとき</td>
+                                <td>x * foo ( x - 1 )</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <button onclick="alert(foo(5))">
+                foo(5)
+            </button>
+        </div>
+    </section>
+    <section>
+        <h1>
+            次の問題にあう関数bar()をつくりなさい。
+        </h1>
+        <div class="q">
+            <table>
+                <tr>
+                    <td>
+                        関数名
+                    </td>
+                    <td>bar</td>
+
+                </tr>
+                <tr>
+                    <td>パラメータ</td>
+                    <td>p , q </td>
+                </tr>
+                <tr>
+                    <td>処理</td>
+                    <td>
+                        p * ( p -1 ) * ( p - 2 ) * ( p - 3 ) * ... を計算する。<br>
+                        書ける項目数はq個<br>
+                        <br>
+                        i = 1, 2, 3, 4, <= q　を利用する。 </td> 
+                </tr>
+                
+                <tr>
+                    <td>戻り値</td>
+                    <td>計算結果</td>
+
+                </tr>
+            </table>
+            <button onclick="alert(bar( 5 ,  8 ))">
+                    foo(5, 8 )
+                </button>
+        </div>
+    </section>
+
+</body>
+
+</html>
