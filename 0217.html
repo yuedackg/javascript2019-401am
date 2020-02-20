@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>18xxx</title>
+    <script>
+        function foo() {
+            alert("hello");
+        }
+        function bar(){
+            alert( "world");
+        }
+        function result(){
+            alert(  "result!");
+            document.form3.elements[0].value = document.form1.elements[0].value+document.form2.elements[0].value;
+        }
+    </script>
+    <style>
+        input {
+            width: 300px;
+        }
+
+        .nLabel {
+            width: 100px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nButton {
+            width: 50px;
+            display: flex;
+            flex-direction: row;
+            border: double 1px red;
+            background-color: yellow;
+            text-align: center;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM Access code</h1>
+    <form name="form1">
+        <div class="container">
+            <div class="nLabel">username</div>
+            <div><input type="text" name="nUsername"></div>
+            <div class="nButton" onclick="foo()">
+                ok
+            </div>
+        </div>
+
+
+    </form>
+    <form name="form2">
+        <div class="container">
+            <div class="nLabel">password</div>
+            <div><input type="text" name="nPassword"></div>
+            <div class="nButton" onclick="bar()">
+                ok2
+            </div>
+        </div>
+
+    </form>
+    <hr>
+    <form name="form3">
+        <div class="container">
+            <div class="nLabel">Information</div>
+            <div><input type="text" name="nInformation"></div>
+            <div class="nButton" onclick="result()">
+                result
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

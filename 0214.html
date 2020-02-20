@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>02-14</title>
+    <script>
+        function doAction() {
+            
+            var item = " username = " ;
+            var item2 = " username2 = ";
+            var val1 = document.forms[0].elements[0].value;
+            var val2 = document.forms[1].elements[0].value;
+
+            var ans = item + val1 + item2 + val2;            
+            alert(  ans);
+            
+            document.forms[1].elements[1].value= ans;
+        }
+    </script>
+    <style>
+        h1 {
+            background-color: aqua;
+            border: solid 1px red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <span>username</span>
+        <input type="text" name="nUsername">
+    </form>
+    <form>
+        <span>username2</span>
+        <input type="text" name="nUsername2">
+        <br>
+        <span>answer</span>
+        <input type="text" name="nAnswer">
+
+    </form>
+    <h1 onclick="doAction()">login</h1>
+</body>
+
+</html>

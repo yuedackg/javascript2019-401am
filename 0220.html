@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>dummy</title>
+    <script>
+        function doAction() {
+            // alert("hello");
+            document.forms[0].elements[0].value = "aho";
+            document.forms[0].nUsername.value = "baka";
+
+        }
+    </script>
+    <style>
+        span {
+            margin: 10px;
+
+        }
+        br{
+            margin-bottom: 10px;
+        }
+        #iOK {
+            border: double 5px black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+
+        <h1>title</h1>
+        <span>Username</span>
+        <input type="text" name="nUsername">
+        <br>
+        <span id="iOK" onclick="doAction()"> ok </span>
+    </form>
+
+
+</body>
+
+</html>
